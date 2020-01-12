@@ -1,0 +1,19 @@
+.Footer {
+  width: 100%;
+  padding: 2em 0;
+  height: unset;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50%;
+  }
+
+  h4 {
+    color: aquamarine;
+  }
+
+  p {
+    color: white;
+  }
+}

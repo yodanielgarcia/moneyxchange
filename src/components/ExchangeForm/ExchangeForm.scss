@@ -1,0 +1,51 @@
+.ExchangeForm {
+  width: 100%;
+  padding: 4em 4em 2em 4em;
+  margin-bottom: 2em;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5707 !important;
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 1em;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+  .input-group-prepend {
+    display: block;
+  }
+
+  .input-group {
+    width: unset;
+  }
+
+  input {
+    margin-bottom: 1em;
+    max-width: unset;
+
+    @media (min-width: 768px) {
+      max-width: 20em;
+      margin-bottom: 4em;
+      &:first-child {
+        margin-right: 4em;
+      }
+    }
+  }
+
+  .alert {
+    margin: 1em;
+  }
+
+  button {
+    padding: 0.5em 2em;
+  }
+}
